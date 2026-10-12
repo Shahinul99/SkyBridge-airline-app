@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkyBridge Airlines</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>✈ SkyBridge Airlines</h1><span>Fly the world</span></header>
+
+<div class="hero">
+  <h2>Where would you like to go?</h2>
+  <p>Search flights to 8 great cities</p>
+</div>
+
+<div class="search">
+  <div><label>FROM</label><select id="from"></select></div>
+  <div><label>TO</label><select id="to"></select></div>
+  <div><label>DATE</label><input type="date" id="date"></div>
+  <div><label>PASSENGERS</label><input type="number" id="pax" value="1" min="1" max="9"></div>
+  <button class="btn" id="searchBtn">Search Flights</button>
+</div>
+
+<section id="resultsSection" style="display:none">
+  <h3 id="resultsTitle"></h3>
+  <div id="results"></div>
+</section>
+
+<section>
+  <h3>Popular destinations</h3>
+  <div class="dest-grid" id="dests"></div>
+</section>
+
+<div id="modal"><div class="box" id="modalBox"></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
